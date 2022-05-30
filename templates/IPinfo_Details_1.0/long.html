@@ -10,9 +10,21 @@
           <dt>Hostname:</dt>
           <dd class="wrap">{{ content.hostname || "-" }}</dd>
         </dl>
+        <dl class=" dl-horizontal">
+          <dt>Organization:</dt>
+          <dd class="wrap">{{ content.org || "-" }}</dd>
+        </dl>
         <dl class="dl-horizontal">
           <dt>Country:</dt>
           <dd class="wrap">{{ content.country || "-" }}</dd>
+        </dl>
+        <dl class="dl-horizontal">
+          <dt>Region:</dt>
+          <dd class="wrap">{{ content.region || "-" }}</dd>
+        </dl>
+        <dl class="dl-horizontal">
+          <dt>City:</dt>
+          <dd class="wrap">{{ content.city|| "-" }}</dd>
         </dl>
         <div ng-if="content.asn !== {}">
           <dl class="dl-horizontal">
